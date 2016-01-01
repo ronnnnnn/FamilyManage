@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="系统设置"
+    android:textSize="30dp"
+    android:gravity="center_vertical"
+    />
+
+      <EditText
+          android:layout_marginTop="50dp"
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:inputType="textPersonName" />
+    
+    
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnsetCancel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtPwd"
+            android:layout_marginLeft="10dp"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btnSet"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPwd"
+            android:layout_toLeftOf="@id/btnsetCancel"
+            android:text="设置" />
+    </LinearLayout>
+
+</LinearLayout>
